@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>基于canvas的jQuery圆形进度条插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+                <canvas class="loader2"></canvas>
+	<div class="htmleaf-container">
+		<div class="htmleaf-content bgcolor-3">
+			<div class="clearfix">
+            </div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.classyloader.js"></script>
+	<script>
+        $(document).ready(function() {
+            $('.loader').ClassyLoader({
+                percentage: 100,
+                speed: 20,
+                fontSize: '50px',
+                diameter: 80,
+                lineColor: 'rgba(155,155,155,1)',
+                remainingLineColor: 'rgba(200,200,200,0.4)',
+                lineWidth: 10
+            });
+            $('.loader2').ClassyLoader({
+                percentage: 60,
+                speed: 8,
+                diameter: 50,
+                fontSize: '20px',
+                showText: false,
+                roundedLine: true,
+                fontColor: 'rgba(73, 125, 164, 0.3)',
+                lineColor: 'rgba(73, 125, 164, 1)',
+                remainingLineColor: 'rgba(73, 125, 164, 0.1)',
+                lineWidth: 40
+            });
+            $('.loader3').ClassyLoader({
+                speed: 40,
+                fontSize: '36px',
+                fontFamily: 'Georgia',
+                fontColor: 'rgba(0,0,0,0.4)',
+                lineColor: 'rgba(255,0,0,0.4)',
+                lineWidth: 1,
+                remainingLineColor: 'rgba(0,0,0,0.1)'
+            });
+            $('.loader4').ClassyLoader({
+                speed: 20,
+                diameter: 30,
+                fontSize: '20px',
+                fontFamily: 'Georgia',
+                fontColor: 'rgba(0,0,0,0.4)',
+                lineColor: 'rgba(0,0,0,0.4)',
+                percentage: 34,
+                remainingLineColor: 'rgba(0,0,0,0.1)'
+            });
+            $('.loader5').ClassyLoader({
+                speed: 100,
+                diameter: 80,
+                fontSize: '30px',
+                fontFamily: 'Courier',
+                fontColor: 'rgba(0,0,0,0.4)',
+                lineColor: 'rgba(255,175,255,0.7)',
+                percentage: 80,
+                lineWidth: 20,
+                start: 'top',
+                remainingLineColor: 'rgba(200,200,200,0.1)'
+            });
+        });
+    </script>
+</body>
+</html>
